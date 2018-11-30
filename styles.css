@@ -6,6 +6,7 @@ body {
   font-weight: 300;
   color: #111;
   background: #edeff0;
+  background-image: url(svgs/background.svg);
 }
 
 #container {
@@ -59,4 +60,38 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+.logo {
+  width: 20%;
+}
+
+.menu {
+  display:block;
+  margin-left: 0;
+  width: 100%;
+  font-size: .90em;
+  vertical-align: middle;
+}
+
+.menu svg {
+  width: 20%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.menu a:nth-child(2) {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.home,
+.visit,
+.contact {
+  margin-top: 2%;
+  margin-bottom: 15%;
+  margin-left: 0;
+  margin-right: 0;
+  width: 15%;
+  display: inline-block;
 }
