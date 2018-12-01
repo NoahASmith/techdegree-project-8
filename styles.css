@@ -29,10 +29,6 @@ a {
   font-weight: 700;
 }
 
-a:hover {
-  color: #111;
-}
-
 header {
   padding-top: 10px;
 }
@@ -62,9 +58,8 @@ footer {
   color: #ba8058;
 }
 
-.logo {
-  width: 20%;
-}
+
+/* Menu Items */
 
 .menu {
   display:block;
@@ -90,8 +85,128 @@ footer {
 .contact {
   margin-top: 2%;
   margin-bottom: 15%;
-  margin-left: 0;
-  margin-right: 0;
-  width: 15%;
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 20%;
   display: inline-block;
+  fill: #39add1;
+  transition: .5s ease-out;
+  float: left;
+}
+
+.home:hover,
+.visit:hover,
+.contact:hover {
+  color: #EAAA7F;
+  fill: #EAAA7F;
+}
+/* End Menu Items */
+
+
+
+/* Logo */
+.h1-lettering {
+  text-align: center;
+  color: #EAAA7F;
+}
+
+.logo {
+  width: 140px;
+  height: 120px;
+  transition: transform 1.5s .5s;
+}
+
+.logo:hover {
+  animation: scaled 1.5s cubic-bezier(.83,-0.29,.22,1.31);
+}
+
+.logo-lettering {
+  display: none
+}
+/* End logo */
+
+
+
+
+/* Beginning of Crogis */
+.main-corgi {
+  display: none;
+}
+
+.corg-div {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.corgis {
+  height: 150px;
+  width: 130px;
+  margin: 0 20px;
+  transition: .5s cubic-bezier(.83,-0.29,.22,1.31);
+}
+
+.corgis:hover {
+  transform: translateY(55%);
+}
+
+.corg-sable {
+  fill: #b97f5b;
+}
+
+.corg-fawn {
+  fill: #e9aa82;
+}
+
+.corg-red {
+  fill: #834b29;
+}
+
+.corg-stone {
+  fill:#52595F;
+}
+
+.corg-text {
+  color: #b97f5b;
+  display: block;
+}
+/* End of Corgis */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+@media (min-width: 425px) {
+  .logo-lettering{
+    display: block;
+  }
+  .h1-lettering {
+    display: none;
+  }
+  .menu a:nth-child(2) {
+    margin-left: .1%;
+    margin-right: .1%;
+  }
+  .home,
+  .visit,
+  .contact {
+    width: 15%;
+  }
+}
+
+
+@keyframes scaled {
+  25% {
+    transform: scale(.9)
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: rotate(1.2);
+  }
 }
